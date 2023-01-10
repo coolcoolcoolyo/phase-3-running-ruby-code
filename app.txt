@@ -1,0 +1,44 @@
+# app.rb
+# puts === console.log(); # === //
+
+# puts adds a line break at the end
+puts "Hello world!"
+puts "Hello world!"
+puts "Hello world!"
+
+# print doesn't add a line break, it's continuous
+print "Hello world!"
+print "Hello world!"
+print "Hello world!"
+
+# puts is great for working with strings, but for certain arrays it may not be great
+# when using `puts` on something that isn't already a string, Ruby will coerce it into becoming a string by calling the `.to_s` method.
+puts [1, 2, 3]
+
+# this is where`p` comes in handy!
+p [1, 2, 3]
+
+# Ruby has one more method, `pp`, for "pretty-printing" complex data, such as nested arrays and hashes (this is the Ruby equivalent of a JS Object!)
+pp [{ id: 1, hello: "World" }, 
+    { id: 2, hello: "Ruby" }, 
+    { id: 3, hello: "Moon" }, 
+    { id: 4, hello: "Learner" }]
+
+p [1,2,3]
+puts "Hello World!"
+print "Pass this test, please."
+p [1,2,3]
+
+def add
+    
+end
+# 1 + 1
+puts add + add
+
+def add num1, num2
+    puts num1
+    puts num2
+    num1 + num2
+end
+
+puts add(1,3) + add(2,2)
